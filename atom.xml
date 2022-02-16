@@ -6,7 +6,7 @@
   <link href="https://youtiaott.github.io/atom.xml" rel="self"/>
   
   <link href="https://youtiaott.github.io/"/>
-  <updated>2022-02-06T09:19:18.058Z</updated>
+  <updated>2022-02-16T03:19:35.093Z</updated>
   <id>https://youtiaott.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>分享--Lombok</title>
+    <link href="https://youtiaott.github.io/2022/02/16/%E5%88%86%E4%BA%AB-Lombok/"/>
+    <id>https://youtiaott.github.io/2022/02/16/%E5%88%86%E4%BA%AB-Lombok/</id>
+    <published>2022-02-16T02:56:47.000Z</published>
+    <updated>2022-02-16T03:19:35.093Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="一个自动生成get，set方法的工具"><a href="#一个自动生成get，set方法的工具" class="headerlink" title="一个自动生成get，set方法的工具"></a>一个自动生成get，set方法的工具</h3><p>在pom下添加依赖</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.projectlombok<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>lombok<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.18.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">scope</span>&gt;</span>provided<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><h3 id="常见注解"><a href="#常见注解" class="headerlink" title="常见注解"></a>常见注解</h3><ul><li><p>@Setter 注解在类或字段，注解在类时为所有字段生成setter方法，注解在字段上时只为该字段生成setter方法。</p></li><li><p>@Getter 使用方法同上，区别在于生成的是getter方法。</p></li><li><p>@ToString 注解在类，添加toString方法。</p></li><li><p>@EqualsAndHashCode 注解在类，生成hashCode和equals方法。</p></li><li><p>@NoArgsConstructor 注解在类，生成无参的构造方法。</p></li><li><p>@RequiredArgsConstructor 注解在类，为类中需要特殊处理的字段生成构造方法，比如final和被@NonNull注解的字段。</p></li><li><p>@AllArgsConstructor 注解在类，生成包含类中所有字段的构造方法。</p></li><li><p>@Data 注解在类，生成setter/getter、equals、canEqual、hashCode、toString方法，如为final属性，则不会为该属性生成setter方法。</p></li><li><p>@Slf4j 注解在类，生成log变量，严格意义来说是常量。private static final Logger log = LoggerFactory.getLogger(UserController.class);</p></li></ul><p>一个简单的栗子：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">user</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Integer id;</span><br><span class="line">    <span class="keyword">private</span> String username;</span><br><span class="line">    <span class="keyword">private</span> String password;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>详细信息可以参考<a href="https://projectlombok.org/features/all">官方文档</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>SpringMVC笔记</title>
