@@ -38,7 +38,7 @@ audioAutoPlay();
 <h2 id="AOP的常用术语"><a href="#AOP的常用术语" class="headerlink" title="AOP的常用术语"></a>AOP的常用术语</h2><ul>
 <li>Target(目标对象)：被代理的目标对象</li>
 <li>Proxy(代理): 一个类被aop、织入增强后，就产生一个结果代理类</li>
-<li>Joinpoint(连接点)：所谓的连接点就是被拦截到的点（可以被增强的方法）</li>
+<li>Joinpoint(连接点)：所谓的连接点就是被拦截到的点，这些点指的是方法，因为spring只支持方法类型的连接点</li>
 <li>pointcut(切入点)：所谓切入点指的是我们要对哪些joinpoint进行拦截的定义（需要被增强的方法叫切入点）</li>
 <li>Advice(通知/增强)：指被拦截到的joinpoint之后要做的事情就是通知（增强的方法，可以理解为被添加进去的方法）</li>
 <li>Aspect(切面)：切点和通知的结合（需要被增强的方法经过通知后就是切面）</li>
