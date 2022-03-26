@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>spring注解@Component、@Service等自动生成bean的命名规则</title>
+      <link href="/2022/03/26/spring%E6%B3%A8%E8%A7%A3-Component%E3%80%81-Service%E7%AD%89%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90bean%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99/"/>
+      <url>/2022/03/26/spring%E6%B3%A8%E8%A7%A3-Component%E3%80%81-Service%E7%AD%89%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90bean%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul><li><p>Spring对注解形式的bean的名字的默认处理就是将首字母小写，再拼接后面的字符</p></li><li><p>当类的名字是以两个或以上的大写字母开头的话，bean的名字会与类名保持一致</p></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/2022/03/24/%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/"/>
       <url>/2022/03/24/%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/</url>
